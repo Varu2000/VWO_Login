@@ -16,30 +16,35 @@ public class Test_002 extends BasePage {
 		String errormsg = lgn.wrongMailPass();
 		Assert.assertEquals(errormsg, expectedError);
 	}
+
 	@Test(enabled = true)
 	public void loginBlankData() {
 		LoginPage lgn = new LoginPage(driver);
 		String errormsg = lgn.BlankInput();
 		Assert.assertEquals(errormsg, expectedError);
 	}
+
 	@Test(enabled = true)
 	public void logPassBlank() {
 		LoginPage lgn = new LoginPage(driver);
 		String errormsg = lgn.passBlank();
 		Assert.assertEquals(errormsg, expectedError);
 	}
+
 	@Test(enabled = true)
 	public void loginMailBlank() {
 		LoginPage lgn = new LoginPage(driver);
 		String errormsg = lgn.emailBlank();
 		Assert.assertEquals(errormsg, expectedError);
 	}
+
 	@Test(enabled = true)
 	public void loginWrongPass() {
 		LoginPage lgn = new LoginPage(driver);
 		String errormsg = lgn.wrongPass();
 		Assert.assertEquals(errormsg, expectedError);
 	}
+
 	@Test(enabled = true)
 	public void loginWrongMail() {
 		LoginPage lgn = new LoginPage(driver);
